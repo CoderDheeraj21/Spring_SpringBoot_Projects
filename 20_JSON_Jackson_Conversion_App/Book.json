@@ -1,0 +1,10 @@
+{
+	"bookId": 101,
+	"bookName": "Spring Boot",
+	"bookPrice": 4000.0,
+	"author": {
+		"authorName": "Dheeraj",
+		"authorEmail": "dhirajchatur.21@gmail.com",
+		"authorPhone": 12345
+	}
+}

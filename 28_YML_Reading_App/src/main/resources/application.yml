@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: 28_YML_Reading_App
+
+
+dheeraj:
+  messages:
+    welcomeMsg: Welcome To Dheeraj IT
+    greetMsg: Good Morning
+    wishMsg: All The Best

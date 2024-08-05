@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 3_SBMS_Welcome_APi_App

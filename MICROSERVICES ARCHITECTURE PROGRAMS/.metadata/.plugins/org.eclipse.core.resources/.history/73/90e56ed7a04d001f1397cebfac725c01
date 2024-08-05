@@ -1,0 +1,11 @@
+package in.Dheeraj.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@FeignClient(name = "3_SBMS_WELCOME_API_APP")
+public interface WelcomeApiClient {
+
+	@GetMapping("/welcome")
+	public String invokeWelcomeApi();
+}

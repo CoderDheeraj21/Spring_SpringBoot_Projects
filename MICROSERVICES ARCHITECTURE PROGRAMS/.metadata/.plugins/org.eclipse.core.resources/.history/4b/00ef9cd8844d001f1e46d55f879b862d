@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 2_SBMS_Admin_Server_App

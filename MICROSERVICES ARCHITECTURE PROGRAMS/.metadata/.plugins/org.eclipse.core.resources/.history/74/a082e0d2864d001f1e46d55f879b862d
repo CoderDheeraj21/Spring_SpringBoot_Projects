@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 3_SBMS_Welcome_APi_App
+
+    
+server:
+  port: 8081
+  
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/

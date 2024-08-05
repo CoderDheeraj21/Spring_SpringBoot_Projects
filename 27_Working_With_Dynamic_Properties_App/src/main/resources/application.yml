@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: 27_Working_With_Dynamic_Properties_App
+messages:
+  welcome: Welcome to Dheeraj IT
+  greet: Good Morning

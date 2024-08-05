@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="creditcard" class="in.Dheeraj.CreditCardPayment"></bean>
+    <bean id="debitcard" class="in.Dheeraj.DebitCardPayment"></bean>
+    <bean id="upi" class="in.Dheeraj.UpiPayment"></bean>
+    <bean id="billcollector" class="in.Dheeraj.BillCollector">
+		
+		<!-- property tag is used to perform injection by using setter method-->
+		<!-- <property name="payment" ref="creditcard"></property> -->
+		
+		<!-- contructor-arg is used to perform injection by using constructor method-->
+		<constructor-arg name="payment" ref="upi"></constructor-arg>
+	</bean>
+    
+</beans>

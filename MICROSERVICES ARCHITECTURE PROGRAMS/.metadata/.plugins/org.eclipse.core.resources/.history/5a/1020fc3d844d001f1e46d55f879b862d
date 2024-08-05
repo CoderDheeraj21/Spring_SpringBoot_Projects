@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: 1_SBMS_Service_Registry_App
+
+
+server.port.8761

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: 29_Actuators_App
+
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+  endpoint:
+    shutdown:
+      enabled: true
+        

@@ -1,0 +1,20 @@
+server:
+  port: 3333
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: one
+          uri: lb://SBMS-WELCOME-API-APP
+          predicates:
+            - Path=/welcome
+        - id: two
+          uri: lb://SBMS-GREET-API-APP
+          predicates:
+            - Path=/greet
